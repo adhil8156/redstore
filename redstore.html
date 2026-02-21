@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <div class="container-fluid" style=" background: radial-gradient(circle, white, pink);">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand p-5" href="#">
+          <img src="images/logo.png" alt="Logo" style="width: 150px;">
+        </a>
+
+        <!-- Hamburger button (for mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pro">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#abt">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#abt">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <img src="images/basket.png" alt="Basket" class="nav-link img-fluid" style="height: 50px; width: 50px;">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="row">
+      <div class="col-12 col-md-6 container ps-5 d-flex align-items-center justify-content-center" style="height: 600px;">
+        <div>
+          <h1><b>Give Your Workout</b></h1>
+          <h1><b>A New Style!</b></h1>
+          <p>Success isn't always about greatness. It's about consistency. Consistent</p>
+          <p>hard work gains success. Greatness will come.</p>
+          <br>
+          <button class="rounded-pill" style="width: 200px; height: 40px; color: white; background-color: orangered;">
+            Explore Now →
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 d-flex">
+        <img class="img-fluid" src="images/image1.png" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <br><br><br>
+  <div class="container d-flex flex-wrap justify-content-center justify-content-evenly">
+    <img class="img-fluid m-2" src="images/gallery1.jpg" alt="" style="width: 300px;">
+    <img class="img-fluid m-2" src="images/gallery2.jpg" alt="" style="width: 300px;">
+    <img class="img-fluid m-2" src="images/gallery3.jpg" alt="" style="width: 300px;">
+  </div>
+  <br>
+  <br>
+  <style>
+  .card {
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+    .img-hover {
+    filter: grayscale(100%);
+    
+  }
+
+  .img-hover:hover {
+    filter: grayscale(0%);
+  }
+
+  </style>
+
+
+
+  <!-- Featured products -->
+  <div>  
+    <div class="container d-flex justify-content-center"><h1><b>Featured Products</b></h1></div>
+    <div class="container rounded-2" style="width: 100px; height: 5px; background-color: orangered;"></div>
+  </div>
+  <div class="container mt-4" id="pro">
+  <div class="row g-3">
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/card1.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Red Printed T-Shirt</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/card2.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Shoes</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/card3.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Pants</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/card4.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Blue Printed T-Shirt</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <!-- Latest Products -->
+  <div>  
+    <div class="container d-flex justify-content-center"><h1><b>Latest Products</b></h1></div>
+    <div class="container rounded-2" style="width: 100px; height: 5px; background-color: orangered;"></div>
+  </div>
+  <div class="container mt-4">
+  <div class="row g-3">
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/cardA1.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Shoes</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA2.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA3.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">socks</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA4.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">watch</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="container mt-4">
+  <div class="row g-3">
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA5.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">watch</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA6.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Shoes</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA7.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">shoe</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="images/CA8.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">pant</h5>
+          <div class="text-warning mb-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div>$50</div>         
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="container-fluid mt-5 row" style="background: radial-gradient(circle,pink,white);">
+    <div class="col-12 col-md-6 d-flex justify-content-center mt-5 mb-5">
+      <img src="images/watch.png" alt="" style="width: 500px;">
+
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-center">
+      <div>
+        <p>Exclusive Available on RedStore</p>
+        <h1 class="mt-4 mb-3"><b>Smart Band 4</b></h1>
+        <div>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.
+        </div>
+        <button class="rounded-pill mt-5" style="width: 175px;background-color: orangered; color: white;">Buy Now → </button>
+      </div>
+    </div>
+  </div>
+  <!--review-->
+  <div class="container mt-5">
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="card-img-top text-danger d-flex justify-content-center"><i class="bi bi-quote" style="font-size:100px;"></i></div>
+        <div class="card-body">
+          <div class="card-title p-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </div>
+          <div class="text-danger mb-2 d-flex justify-content-center">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="d-flex justify-content-center"><img src="images/profile.png" alt="" style="width: 50px;" class="rounded-circle"></div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="card-img-top text-danger d-flex justify-content-center"><i class="bi bi-quote" style="font-size:100px;"></i></div>
+        <div class="card-body">
+          <div class="card-title p-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </div>
+          <div class="text-danger mb-2 d-flex justify-content-center">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="d-flex justify-content-center"><img src="images/profile2.png" alt="" style="width: 50px;" class="rounded-circle"></div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="card-img-top text-danger d-flex justify-content-center"><i class="bi bi-quote" style="font-size:100px;"></i></div>
+        <div class="card-body">
+          <div class="card-title p-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </div>
+          <div class="text-danger mb-2 d-flex justify-content-center">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          </div>
+          <div class="d-flex justify-content-center"><img src="images/profile1.png" alt="" style="width: 50px;" class="rounded-circle"></div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container ">
+      <div class="row mt-5 g-3 d-flex justify-content-center">
+        <div class="col-6 col-md-2 mt-5"><img src="images/logo-godrej.png" alt="" class="img-hover"></div>
+        <div class="col-6 col-md-2 mt-5"><img src="images/logo-coca-cola.png" alt=""class="img-hover"></div>
+        <div class="col-6 col-md-2 mt-5"><img src="images/logo-oppo.png" alt=""class="img-hover"></div>
+        <div class="col-6 col-md-2 mt-5"><img src="images/logo-paypal.png" alt=""class="img-hover"></div>
+        <div class="col-6 col-md-2 mt-5"><img src="images/logo-paypal.png" alt=""class="img-hover"></div>
+      </div>
+  </div>
+  <div style="background-color: black;" id="abt">
+  <div class="container mt-5 pt-5 gap-5 d-flex justify-content-center border-bottom border-light" style="color: white; background-color: black;">
+    <div class="row mt-3 container">
+      <div class="col-12 col-md-3 ">
+        <b>Download our App</b>
+        <p class="pt-3">Download App for Android and ios mobile phone</p>       
+        <img src="images/app-store.png" alt="" style="width: 100px;">
+        <img src="images/app.png" alt="" style="width: 100px;">
+      </div>
+    
+      <div class="col-12 col-md-5 ">
+        <div class=" d-flex justify-content-center" ><img src="images/redlogo new.png" alt=""></div>
+        
+        <p class="pt-5">Our Purpose Is To Sustainably Make th Pleasure and Benefits of Sports Accessible to the Many.</p>        
+      </div>
+      <div class="col-12 col-md-2 ">
+        <div class="container">
+          <p><b>Useful Links</b></p>
+          <p>Coupons</p>
+          <p>Blog Post</p>
+          <p>Return Policy</p>
+          <p>Join Affiliate</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-2 ">
+        <div class="container">
+          <p><b>Follow us</b></p>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+          <p>Youtube</p>
+        </div>
+      </div>  
+    </div>  
+  </div>
+  <div class="container d-flex justify-content-center" style="padding-right: 70px;">Copytight 2025 - Adhil-k</div>
+  </div>
+  
+
+  
+
+  
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
